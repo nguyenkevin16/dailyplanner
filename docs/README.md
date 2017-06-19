@@ -38,23 +38,45 @@ smooth/bug-free navigation, and seed data:
 Objective: Functioning rails project with front-end auth, and heroku deployment
 
 >Components:
+  - SessionContainer
+    * SessionForm
+  - Splash
+    * Carousel/Images
+    * Features/Testimonials
+  - Navbar
+    * Site Navigation/Sessiom Form Links
 
 ### Phase 2: To-do/Journal Model, API, AWS Hosting, and Basic User Show Page (2 days)
 Objective: To-dos and Journal Entries can be created, read, edited, and destroyed through the API and hosted via AWS S3
 
 >Components:
+  - UserContainer
+  - User
 
-### Phase 3: Search (1 days)
+### Phase 3: Search + Journal Entry Editor (1 days)
 Objective: Journal Entries or to-dos can be searched for via titles or date assigned
 
 >Components:
+  - Navbar
+    * Search
 
 ### Phase 4: User Show Pages (3 days)
 Objective: Users have a show page with a to-do index listing, a calendar navigation component, and journal entry section
 
 >Components:
+  - UserContainer
+  - User
+    * Calendar Navigation
+    * TodoIndex
+    * JournalEntryContainer
+      - JournalEntry
 
 ### Phase 5: Cleanup, Styles, About, Credits (2 days)
 Objective: Add about and credits pages for general additional info and clean up code/styling
 
 >Components:
+  - Splash
+    * FooterContainer
+    * Footer
+    * About
+    * Credits
