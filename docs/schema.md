@@ -28,7 +28,7 @@ id          | integer    | not null, primary key
 user_id     | integer    | not null, foreign key, indexed
 date_id     | integer    | not null, foreign key, indexed
 title       | string     | not null
-body        | string     | 
+body        | string     | not null
 created_at  | datetime   | not null
 updated_at  | datetime   | not null
 
