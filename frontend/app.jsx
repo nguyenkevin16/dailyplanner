@@ -1,11 +1,10 @@
 // frontend/components/app.jsx
 
 import React from 'react';
+import InDev from './components/in_dev';
 
 const App = () => (
-  <div>
-    <h1>Daily Planner</h1>
-  </div>
+  <InDev/>
 );
 
 export default App;
