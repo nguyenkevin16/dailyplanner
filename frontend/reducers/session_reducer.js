@@ -5,6 +5,11 @@ import { RECEIVE_CURRENT_USER,
          CLEAR_SESSION_ERRORS } from '../actions/session_actions';
 import { merge } from 'lodash';
 
+const _defaultState = {
+  currentUser: null,
+  errors: []
+};
+
 const sessionReducer = (state = _defaultState, action) => {
   Object.freeze(state);
   let nextState;
