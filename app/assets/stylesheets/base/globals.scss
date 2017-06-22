@@ -1,0 +1,11 @@
+.app {
+  height: 100vh;
+}
+
+.background-gradient {
+  background: #c9d6ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #c9d6ff, #e2e2e2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #c9d6ff, #e2e2e2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #c9d6ff, #e2e2e2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #c9d6ff, #e2e2e2); /* Standard syntax */
+}
