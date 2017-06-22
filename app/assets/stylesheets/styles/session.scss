@@ -1,0 +1,26 @@
+.session-form {
+  height: 100%;
+  width: 100%;
+}
+
+  .session-form * {
+    color: black;
+  }
+  
+  .session-form > * {
+    margin: 1em 0;
+  }
+
+  .session-form img {
+    height: 5em;
+    width: 5em;
+  }
+
+  .session-form input {
+    width: 20em;
+    height: 3em;
+  }
+
+  .session-form form > * {
+    margin: 0.25em 0;
+  }

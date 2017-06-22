@@ -3,7 +3,6 @@
   background: #fff;
   overflow: auto;
   outline: none;
-  padding: 2em;
 
   top: 10em;
   bottom: 15em;
@@ -11,6 +10,11 @@
   right: 20em;
 
   z-index: 9999;
+}
+
+.modal * {
+  outline: none;
+  border: none;
 }
 
 .modal-overlay {
