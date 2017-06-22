@@ -32,13 +32,13 @@ class SessionForm extends React.Component {
     }
 
     return (
-      <section className='session-form'>
+      <section className='session-form flex-grid-col'>
         <div>
           <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/v1498104886/notebook_irz3uc.png'/>
           <h3>{ formHeader }</h3>
         </div>
 
-        <form onSubmit={ this.handleSubmit }>
+        <form onSubmit={ this.handleSubmit } className='flex-grid-col'>
           <input onChange={ this.handleChange('username') }
             value={ this.state.username }
             placeholder='username'/>

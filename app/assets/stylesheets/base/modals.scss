@@ -1,0 +1,25 @@
+.modal {
+  position: absolute;
+  background: #fff;
+  overflow: auto;
+  outline: none;
+  padding: 2em;
+
+  top: 10em;
+  bottom: 15em;
+  left: 20em;
+  right: 20em;
+
+  z-index: 9999;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+  z-index: 9998;
+}
