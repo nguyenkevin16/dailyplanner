@@ -1,5 +1,8 @@
 .flex-grid {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-grid-col {
@@ -7,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-grid-thirds {
