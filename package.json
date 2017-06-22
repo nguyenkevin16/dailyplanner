@@ -7,7 +7,12 @@
     "doc": "docs",
     "lib": "lib"
   },
+  "engines": {
+    "node": "7.10.0",
+    "npm": "4.6.1"
+  },
   "scripts": {
+    "postinstall": "webpack",
     "start": "webpack -w"
   },
   "repository": {
