@@ -4,7 +4,7 @@ import React from 'react';
 import Splash from './components/splash';
 
 const App = () => (
-  <section className='app background-gradient'>
+  <section className='app'>
     <Splash/>
   </section>
 );
