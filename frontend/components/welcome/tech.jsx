@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Technologies = () => (
+const Tech = () => (
   <section className='tech flex-grid-col'>
     <h1>Featured Technologies</h1>
     
@@ -48,4 +48,4 @@ const Technologies = () => (
   </section>
 );
 
-export default Technologies;
+export default Tech;

@@ -2,13 +2,11 @@
 
 import React from 'react';
 
-import Splash from './components/splash';
-import Tech from './components/tech';
+import Welcome from './components/welcome/welcome';
 
 const App = () => (
   <section className='app'>
-    <Splash/>
-    <Tech/>
+    <Welcome/>
   </section>
 );
 
