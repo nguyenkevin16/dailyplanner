@@ -33,7 +33,7 @@ class SessionForm extends React.Component {
 
     return (
       <section className='session-form flex-grid-col'>
-        <div>
+        <div className='flex-grid-col'>
           <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/v1498104886/notebook_irz3uc.png'/>
           <h3>{ formHeader }</h3>
         </div>

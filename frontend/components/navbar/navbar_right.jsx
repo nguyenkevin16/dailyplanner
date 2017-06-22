@@ -34,11 +34,11 @@ class NavbarRight extends React.Component {
     return (
       <section className='navbar-right flex-grid'>
         <button onClick={ this.openModal('signup') }>
-          Sign Up
+          <h3>Sign Up</h3>
         </button>
 
         <button onClick={ this.openModal('login') }>
-          Log In
+          <h3>Log In</h3>
         </button>
 
         <Modal
