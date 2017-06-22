@@ -6,7 +6,7 @@ import Welcome from './components/welcome/welcome';
 import Navbar from './components/navbar/navbar';
 
 const App = () => (
-  <section className='app'>
+  <section id='#app'>
     <Navbar/>
     <Welcome/>
   </section>

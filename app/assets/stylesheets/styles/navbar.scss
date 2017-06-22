@@ -7,6 +7,11 @@
   justify-content: space-between;
 }
 
+.navbar * {
+  font-size: 1em;
+  outline: none;
+}
+
 .navbar > section {
   width: 10em;
   height: 100%;
@@ -14,8 +19,20 @@
 
 .navbar-center > h3 {
   font-family: 'Pacifico', cursive;
-  font-size: 1em;
   text-shadow: 2px 2px dimgray;
+}
+
+.navbar-right > * {
+  margin: 0 0.15em;
+}
+
+.navbar-right > button {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-right > button:hover > h3 {
+  color: aqua;
 }
 
 .nav-background {
