@@ -1,6 +1,11 @@
-.flex-grid .col {
+.flex-grid {
+  display: flex;
+}
+
+.flex-grid-col {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .flex-grid-thirds {

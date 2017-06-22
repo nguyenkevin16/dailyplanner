@@ -9,7 +9,7 @@ class Splash extends React.Component {
 
   render() {
     return (
-      <section className='splash flex-grid col text-center'>
+      <section className='splash flex-grid-col text-center'>
         <h1>Daily Planner</h1>
         <p>
           A planner for all your daily needs.
