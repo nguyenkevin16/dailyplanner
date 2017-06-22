@@ -1,10 +1,10 @@
 // frontend/components/app.jsx
 
 import React from 'react';
-import InDev from './components/in_dev';
+import Splash from './components/splash';
 
 const App = () => (
-  <InDev/>
+  <Splash/>
 );
 
 export default App;

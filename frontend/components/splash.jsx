@@ -2,14 +2,14 @@
 
 import React from 'react';
 
-class InDev extends React.Component {
+class Splash extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <section className='greeting'>
+      <section className='splash flex-grid col text-center'>
         <h1>Daily Planner</h1>
         <p>
           A planner for all your daily needs.
@@ -21,4 +21,4 @@ class InDev extends React.Component {
   };
 };
 
-export default InDev;
+export default Splash;
