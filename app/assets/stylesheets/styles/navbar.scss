@@ -1,0 +1,27 @@
+.navbar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+
+  justify-content: space-between;
+}
+
+.navbar > section {
+  width: 10em;
+  height: 100%;
+}
+
+.navbar-center > h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1em;
+  text-shadow: 2px 2px dimgray;
+}
+
+.nav-background {
+  background-color: mediumaquamarine;
+}
+
+.no-background {
+  background-color: none;
+}
