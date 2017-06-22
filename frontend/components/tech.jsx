@@ -11,7 +11,7 @@ const Technologies = () => (
       </a>
       
       <a href='https://facebook.github.io/react/' target="_blank">
-        <img src='http://res.cloudinary.com/nguyenkevin16/image/upload/c_scale,w_300/v1496902780/react_gi6l5k.svg' alt='ReactJS' />
+        <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/c_scale,w_300/v1496902780/react_gi6l5k.svg' alt='ReactJS' />
         <p>React.js</p>
       </a>
 
@@ -41,7 +41,7 @@ const Technologies = () => (
       </a>
 
       <a href='https://jquery.com/' target="_blank">
-        <img src='http://res.cloudinary.com/nguyenkevin16/image/upload/c_scale,w_300/v1496902778/jQurery_bwnmte.gif' alt='jQuery' />
+        <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/c_scale,w_300/v1496902778/jQurery_bwnmte.gif' alt='jQuery' />
         <p>jQuery</p>
       </a>
     </div>
