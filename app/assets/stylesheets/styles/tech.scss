@@ -1,0 +1,49 @@
+.tech {
+  padding: 5em 0;
+  background-color: antiquewhite;
+}
+
+.tech h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  line-height: 60px;
+
+  color: rgb(52, 52, 52);
+  margin: 0 0 50px;
+}
+
+.tech p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+
+  color: rgb(108, 114, 121);
+  margin: 15px 0px;
+}
+
+.tech div {
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.tech div > * {
+  margin: 0 0.5em;
+}
+
+.tech a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.tech div img {
+  height: 84px;
+  width: 84px;
+}
+
+.tech a:nth-child(3) img {
+  margin-left: 10px;
+}
