@@ -1,5 +1,9 @@
 import React from 'react';
 
+import NavbarLeft from './navbar_left';
+import NavbarCenter from './navbar_center';
+import NavbarRight from './navbar_right';
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -24,17 +28,9 @@ class Navbar extends React.Component {
   render() {
     return (
       <section className='navbar flex-grid'>
-        <section className='navbar-left flex-grid'>
-          <h3>Left</h3>
-        </section>
-
-        <section className='navbar-center flex-grid'>
-          <h3>Daily Planner</h3>
-        </section>
-
-        <section className='navbar-right flex-grid'>
-          <h3>Right</h3>
-        </section>
+        <NavbarLeft/>
+        <NavbarCenter/>
+        <NavbarRight/>
       </section>
     );
   }
