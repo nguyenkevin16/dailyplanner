@@ -44,7 +44,7 @@ class NavbarRight extends React.Component {
         <Modal
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
-          className='modal box-shadow'
+          className='modal box-shadow center'
           overlayClassName='modal-overlay'
           contentLabel="Session Modal">
 
