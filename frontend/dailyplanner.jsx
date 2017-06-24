@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
   Modal.setAppElement(document.body);
   const store = configureStore();
 
+  // Add user info to window
+  firebase.auth().onAuthStateChanged(function(user) {
+    window.user = user;
+  });
+
   // TESTING START
   window.signup = SessionAPI.signup;
   window.login = SessionAPI.login;
