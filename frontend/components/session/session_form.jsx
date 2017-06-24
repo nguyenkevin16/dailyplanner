@@ -94,12 +94,12 @@ class SessionForm extends React.Component {
 
     return (
       <section className='session-form flex-grid-col'>
-        <div className='flex-grid-col'>
-          <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/v1498104886/notebook_irz3uc.png'/>
+        <div className='flex-grid-col session-form-header'>
+          <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/v1498104886/notebook_irz3uc.png' alt='favicon notebook'/>
           <h3>{ formHeader }</h3>
         </div>
 
-        <form onSubmit={ this.handleSubmit } className='flex-grid-col'>
+        <form onSubmit={ this.handleSubmit } className='flex-grid-col session-form-inputs'>
           <input className='box-shadow email'
             onChange={ this.handleChange('email') }
             value={ this.state.email }
@@ -116,7 +116,7 @@ class SessionForm extends React.Component {
           </button>
         </form>
 
-        <div className='flex-grid-col'>
+        <div className='flex-grid-col session-form-footer'>
           <a onClick={ this.props.closeModal }>Cancel</a>
           { otherFormLink }
           <a onClick={ this.fillOutAndEnter('guest@demo.com', 'password') }>Demo account</a>
