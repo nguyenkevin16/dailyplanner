@@ -85,7 +85,7 @@ class SessionForm extends React.Component {
         </a>;
     } else {
       submitButton = 'Create';
-      formHeader = 'Create an account'
+      formHeader = 'Create'
       otherFormLink = 
         <a onClick={ this.props.closeAndOpenModal('login') }>
           {'Already have an account?'}
