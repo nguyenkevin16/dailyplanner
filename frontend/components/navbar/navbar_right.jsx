@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
-import SessionFormContainer from '../session/session_form_container';
+import SessionForm from '../session/session_form';
 
 class NavbarRight extends React.Component {
   constructor() {
@@ -48,7 +48,7 @@ class NavbarRight extends React.Component {
           overlayClassName='modal-overlay'
           contentLabel="Session Modal">
 
-          <SessionFormContainer
+          <SessionForm
             formType={ this.state.formType }
             closeAndOpenModal={ this.closeAndOpenModal }
             closeModal={ this.closeModal }/>
