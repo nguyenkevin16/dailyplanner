@@ -5,18 +5,36 @@ class SessionForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { username: "", password: "" };
+    this.state = { email: "", password: "" };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.processForm(user);
+    
+    if (this.props.formType === 'login') {
+      firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then(
+        this.props.closeModal()
+      ).catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode);
+        console.log(errorMessage);
+      });
+    } else {
+      firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then(
+        this.props.closeModal()
+      ).catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode);
+        console.log(errorMessage);
+      });
+    }
   }
 
   handleChange(property) {
-   return e => (this.setState({ [property]: e.target.value }));
+    return e => (this.setState({ [property]: e.target.value }));
   }
 
   render() {
@@ -40,9 +58,9 @@ class SessionForm extends React.Component {
 
         <form onSubmit={ this.handleSubmit } className='flex-grid-col'>
           <input className='box-shadow'
-            onChange={ this.handleChange('username') }
-            value={ this.state.username }
-            placeholder='username'/>
+            onChange={ this.handleChange('email') }
+            value={ this.state.email }
+            placeholder='email'/>
 
           <input className='box-shadow'
             onChange={ this.handleChange('password') }

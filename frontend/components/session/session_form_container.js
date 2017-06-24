@@ -4,7 +4,8 @@ import { login,
 import SessionForm from './session_form';
 
 const mapStateToProps = (state, ownProps) => ({
-  formType: ownProps.formType
+  formType: ownProps.formType,
+  closeModal: ownProps.closeModal
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -13,7 +14,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
   return ({
     processForm: formToProcess,
-    login: (user) => dispatch(login(user))
+    login: (user) => dispatch(login(user)),
   });
 };
 
