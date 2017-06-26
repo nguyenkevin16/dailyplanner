@@ -93,6 +93,17 @@ class SessionForm extends React.Component {
           </button>
         </form>
 
+        <div>
+          <button onClick={ this.props.googlelogin }
+            className='auth-button google'>
+            Sign in with Google
+          </button>
+          <button onClick={ this.props.facebooklogin }
+            className='auth-button facebook'>
+            Sign in with Facebook
+          </button>
+        </div>
+
         <div className='flex-grid-col session-form-footer'>
           <a onClick={ this.props.closeModal }>Cancel</a>
           { otherFormLink }
