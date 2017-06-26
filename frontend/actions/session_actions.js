@@ -45,3 +45,11 @@ export const googlelogin = () => dispatch => (
     dispatch(receiveCurrentUser(user)); 
   }).catch(errors => dispatch(receiveErrors(errors.responseJSON)))
 );
+
+export const facebooklogin = () => dispatch => (
+  FirebaseAPI.facebooklogin().then( result => {
+    let token = result.credential.accessToken;
+    let user = result.user;
+    dispatch(receiveCurrentUser(user)); 
+  }).catch(errors => dispatch(receiveErrors(errors.responseJSON)))
+);

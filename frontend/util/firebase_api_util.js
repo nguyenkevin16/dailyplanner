@@ -11,9 +11,18 @@ export const logout = () => (
 );
 
 export const googlelogin = () => {
-  var provider = new firebase.auth.GoogleAuthProvider();
+  let provider = new firebase.auth.GoogleAuthProvider();
   provider.setCustomParameters({
     'login_hint': 'user@example.com'
+  });
+
+  return firebase.auth().signInWithPopup(provider);
+};
+
+export const facebooklogin = () => {
+  let provider = new firebase.auth.FacebookAuthProvider();
+  provider.setCustomParameters({
+    
   });
 
   return firebase.auth().signInWithPopup(provider);
