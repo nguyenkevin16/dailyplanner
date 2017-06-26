@@ -28,7 +28,7 @@ class Navbar extends React.Component {
 
   render() {
     const renderRight = () => (
-      window.user !== null ? <NavbarRightIn/> : <NavbarRightOut/>
+      window.user === null ? <NavbarRightOut/> : <NavbarRightIn/>
     );
 
     return (
