@@ -23,17 +23,17 @@ export const clearErrors = () => ({
 export const signup = user => dispatch => (
   FirebaseAPI.signup(user).then(
     currentUser => { dispatch(receiveCurrentUser(currentUser)); }
-  ).fail(errors => dispatch(receiveErrors(errors.responseJSON)))
+  ).catch(errors => dispatch(receiveErrors(errors.responseJSON)))
 );
 
 export const login = user => dispatch => (
   FirebaseAPI.login(user).then( currentUser => {
     dispatch(receiveCurrentUser(currentUser)); }
-  ).fail(errors => dispatch(receiveErrors(errors.responseJSON)))
+  ).catch(errors => dispatch(receiveErrors(errors.responseJSON)))
 );
 
 export const logout = () => dispatch => (
   FirebaseAPI.logout().then(
     () => { dispatch(receiveCurrentUser(null)); }
-  ).fail(errors => dispatch(receiveErrors(errors.responseJSON)))
+  ).catch(errors => dispatch(receiveErrors(errors.responseJSON)))
 );
