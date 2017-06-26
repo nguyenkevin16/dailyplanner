@@ -28,7 +28,7 @@ class Navbar extends React.Component {
 
   render() {
     const renderRight = () => {
-      return this.props.currentUser ? <NavbarRightIn/> : <NavbarRightOut/>
+      return this.props.currentUser ? <NavbarRightIn logout={ this.props.logout }/> : <NavbarRightOut/>
     };
 
     return (

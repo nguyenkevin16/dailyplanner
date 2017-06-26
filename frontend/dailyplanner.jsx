@@ -7,8 +7,6 @@ import Modal from 'react-modal';
 import configureStore from './store/store';
 import Root from './root';
 
-import { receiveCurrentUser } from './actions/session_actions';
-
 document.addEventListener('DOMContentLoaded', () => {
   Modal.setAppElement(document.body);
   const store = configureStore();
