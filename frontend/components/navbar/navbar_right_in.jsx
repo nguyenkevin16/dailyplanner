@@ -5,8 +5,6 @@ import SessionForm from '../session/session_form';
 class NavbarRightIn extends React.Component {
   constructor(props) {
     super(props);
-
-    console.log(this.props.logout);
   }
 
   render() {

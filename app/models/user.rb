@@ -13,8 +13,8 @@
 
 class User < ActiveRecord::Base
   after_initialize :ensure_session_token, :ensure_avatar_img
-  validates :username, :password_digest, :session_token, presence: true
-  validates :username, uniqueness: true
+  validates :email, :password_digest, :session_token, presence: true
+  validates :email, uniqueness: true
   validates :password, length: { minimum: 6, allow_nil: true }
 
   has_many :tracks, dependent: :destroy
@@ -43,8 +43,8 @@ class User < ActiveRecord::Base
     BCrypt::Password.new(self.password_digest).is_password?(password)
   end
 
-  def self.find_by_credentials(username, password)
-    user = User.find_by_username(username)
+  def self.find_by_credentials(email, password)
+    user = User.find_by_email(email)
     return nil if user.nil?
     user.is_password?(password) ? user : nil
   end

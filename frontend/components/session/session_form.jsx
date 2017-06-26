@@ -88,10 +88,23 @@ class SessionForm extends React.Component {
             value={ this.state.password }
             placeholder='password'/>
 
-          <button>
+          <button className='raised flex-grid'>
             {submitButton}
           </button>
         </form>
+
+        <div className='flex-grid-col firebase-auth'>
+          <button onClick={ this.props.googlelogin }
+            className='google raised flex-grid'>
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"/>
+            <h6>Sign in with Google</h6>
+          </button>
+          <button onClick={ this.props.facebooklogin }
+            className='facebook raised flex-grid'>
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/facebook.svg"/>
+            <h6>Sign in with Facebook</h6>
+          </button>
+        </div>
 
         <div className='flex-grid-col session-form-footer'>
           <a onClick={ this.props.closeModal }>Cancel</a>
