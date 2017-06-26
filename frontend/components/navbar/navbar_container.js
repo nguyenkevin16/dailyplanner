@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
-import { receiveCurrentUser } from '../../actions/session_actions';
+import { logout } from '../../actions/session_actions';
 import Navbar from './navbar';
 
 const mapStateToProps = (state) => ({
-  currentUser: firebase.auth().currentUser,
+  currentUser: state.session.currentUser,
   errors: state.session.errors
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  receiveUser: (user) => dispatch(receiveCurrentUser(user))
+  logout: () => dispatch(logout())
 });
 
 export default connect(

@@ -7,37 +7,14 @@ class SessionForm extends React.Component {
 
     this.state = { email: "", password: "" };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.login = this.login.bind(this);
-    this.signup = this.signup.bind(this);
     this.fillOutAndEnter = this.fillOutAndEnter.bind(this);
     this.fillField = this.fillField.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.formType === 'login' ? this.login() : this.signup();
-  }
-
-  login(email = this.state.email, password = this.state.password) {
-    firebase.auth().signInWithEmailAndPassword(email, password).then(
-      this.props.closeModal()
-    ).catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log(errorCode);
-      console.log(errorMessage);
-    });
-  }
-
-  signup(email = this.state.email, password = this.state.password) {
-    firebase.auth().createUserWithEmailAndPassword(email, password).then(
-      this.props.closeModal()
-    ).catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log(errorCode);
-      console.log(errorMessage);
-    });
+    const user = Object.assign({}, this.state);
+    this.props.formType === 'login' ? this.props.login(user) : this.props.signup(user);
   }
 
   handleChange(property) {
@@ -54,7 +31,7 @@ class SessionForm extends React.Component {
         () => this.fillField(password, $passwordInput), (username.length * 80)
       );
       setTimeout(
-        () => this.login('guest@demo.com', 'password'), ((username.length + password.length) * 90)
+        () => this.props.login({email: 'guest@demo.com', password: 'password'}), ((username.length + password.length) * 90)
       );
     };
   }
