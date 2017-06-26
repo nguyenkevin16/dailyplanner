@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 import configureStore from './store/store';
 import Root from './root';
 
-import * as SessionAPI from './util/session_api_util';
+import { receiveCurrentUser } from './actions/session_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   Modal.setAppElement(document.body);
@@ -19,9 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // TESTING START
-  window.signup = SessionAPI.signup;
-  window.login = SessionAPI.login;
-  window.logout = SessionAPI.logout;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   // TESTING END
