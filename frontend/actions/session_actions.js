@@ -37,3 +37,11 @@ export const logout = () => dispatch => (
     () => { dispatch(receiveCurrentUser(null)); }
   ).catch(errors => dispatch(receiveErrors(errors.responseJSON)))
 );
+
+export const googlelogin = () => dispatch => (
+  FirebaseAPI.googlelogin().then( result => {
+    let token = result.credential.accessToken;
+    let user = result.user;
+    dispatch(receiveCurrentUser(user)); 
+  }).catch(errors => dispatch(receiveErrors(errors.responseJSON)))
+);
