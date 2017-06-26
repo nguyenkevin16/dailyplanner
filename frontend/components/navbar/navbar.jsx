@@ -27,9 +27,9 @@ class Navbar extends React.Component {
   }
 
   render() {
-    const renderRight = () => (
-      window.user === null ? <NavbarRightOut/> : <NavbarRightIn/>
-    );
+    const renderRight = () => {
+      return this.props.currentUser ? <NavbarRightIn/> : <NavbarRightOut/>
+    };
 
     return (
       <section className='navbar flex-grid'>
