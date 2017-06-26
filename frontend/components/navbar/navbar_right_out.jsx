@@ -1,8 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal';
-import SessionForm from '../session/session_form';
+import SessionFormContainer from '../session/session_form_container';
 
-class NavbarRight extends React.Component {
+class NavbarRightOut extends React.Component {
   constructor() {
     super();
 
@@ -48,7 +48,7 @@ class NavbarRight extends React.Component {
           overlayClassName='modal-overlay'
           contentLabel="Session Modal">
 
-          <SessionForm
+          <SessionFormContainer
             formType={ this.state.formType }
             closeAndOpenModal={ this.closeAndOpenModal }
             closeModal={ this.closeModal }/>
@@ -58,4 +58,4 @@ class NavbarRight extends React.Component {
   }
 };
 
-export default NavbarRight;
+export default NavbarRightOut;
