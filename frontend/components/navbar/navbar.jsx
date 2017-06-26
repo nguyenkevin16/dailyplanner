@@ -2,7 +2,8 @@ import React from 'react';
 
 import NavbarLeft from './navbar_left';
 import NavbarCenter from './navbar_center';
-import NavbarRight from './navbar_right';
+import NavbarRightIn from './navbar_right_in';
+import NavbarRightOut from './navbar_right_out';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -26,11 +27,15 @@ class Navbar extends React.Component {
   }
 
   render() {
+    const renderRight = () => (
+      window.user !== null ? <NavbarRightIn/> : <NavbarRightOut/>
+    );
+
     return (
       <section className='navbar flex-grid'>
         <NavbarLeft/>
         <NavbarCenter/>
-        <NavbarRight/>
+        { renderRight() }
       </section>
     );
   }

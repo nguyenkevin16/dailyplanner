@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import SessionForm from '../session/session_form';
 
-class NavbarRight extends React.Component {
+class NavbarRightIn extends React.Component {
   constructor() {
     super();
 
@@ -58,4 +58,4 @@ class NavbarRight extends React.Component {
   }
 };
 
-export default NavbarRight;
+export default NavbarRightIn;
