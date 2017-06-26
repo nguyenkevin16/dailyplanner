@@ -3,15 +3,14 @@ import Modal from 'react-modal';
 import SessionForm from '../session/session_form';
 
 class NavbarRightIn extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.logout = this.logout.bind(this);
   }
 
   logout() {
     firebase.auth().signOut().then(function() {
-      // Sign-out successful.
     }).catch(function(error) {
       console.log(error);
     });

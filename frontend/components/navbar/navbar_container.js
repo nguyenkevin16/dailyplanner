@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { receiveCurrentUser } from '../../actions/session_actions';
 import Navbar from './navbar';
 
 const mapStateToProps = (state) => ({
@@ -7,7 +8,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  
+  receiveUser: (user) => dispatch(receiveCurrentUser(user))
 });
 
 export default connect(
