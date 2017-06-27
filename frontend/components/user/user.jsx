@@ -6,17 +6,22 @@ class User extends React.Component {
   }
 
   render() {
-    <section className='user flex-grid'>
-      <section className='calendar-tasks'>
-        <section className='calendar'>
+    return (
+      <section className='user flex-grid'>
+        <section className='calendar-tasks'>
+          <section className='calendar'>
+            testing
+          </section>
+          
+          <section className='tasks'>
+            testing
+          </section>
         </section>
-        
-        <section className='tasks'>
+        <section className='journal'>
+          testing
         </section>
       </section>
-      <section className='journal'>
-      </section>
-    </section>
+    );
   }
 }
 
