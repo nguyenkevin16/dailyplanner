@@ -18,7 +18,7 @@ class User extends React.Component {
       <section className='user flex-grid'>
         <section className='navbar-dummy'/>
 
-        <section className='calendar-tasks'>
+        <section className='calendar-tasks x-thirds'>
           <section className='calendar'>
             testing
           </section>
