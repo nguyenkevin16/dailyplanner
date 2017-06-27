@@ -18,16 +18,17 @@ class User extends React.Component {
       <section className='user flex-grid'>
         <section className='navbar-dummy'/>
 
-        <section className='calendar-tasks x-thirds'>
-          <section className='calendar'>
+        <section className='calendar-tasks x-1-3 y-1'>
+          <section className='calendar x-1 y-1-3'>
             testing
           </section>
           
-          <section className='tasks'>
+          <section className='tasks x-1 y-2-3'>
             testing
           </section>
         </section>
-        <section className='journal'>
+
+        <section className='journal x-2-3 y-1'>
           testing
         </section>
       </section>
