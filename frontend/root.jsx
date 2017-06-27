@@ -2,14 +2,24 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter, 
+         Switch,
+         Route } from 'react-router-dom';
 import App from './app';
+
+import User from './components/user/user';
+import Welcome from './components/welcome/welcome';
 
 const Root = ({ store }) => (
   <Provider store={ store }>
-    <HashRouter>
-      <App/>
-    </HashRouter>
+    <App>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' component={Welcome}/>
+          <Route path='/user' component={User}/>
+        </Switch>
+      </BrowserRouter>
+    </App>
   </Provider>
 );
 
