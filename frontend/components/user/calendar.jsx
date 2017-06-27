@@ -1,5 +1,6 @@
 import React from 'react';
 import CalHeader from './cal-header';
+import CalWeekdays from './cal-weekdays';
 
 class Calendar extends React.Component {
   constructor(props) {
@@ -21,17 +22,10 @@ class Calendar extends React.Component {
     return(
       <section className='cal flex-grid-col x-1 y-1-3'>
         <CalHeader state={ this.state }/>
-        
-        <div className='cal-row flex-grid'>
-          {
-            this.state.dayNames.map(day => <div className='cal-cell flex-grid' key={ day }> { day } </div> )
-          }
-        </div>
+        <CalWeekdays dayNames={ this.state.dayNames }/>
       </section>
     );
   }
 }
 
 export default Calendar;
-
-{/*<WeekDays dayNames={this.state.dayNames} />*/}
