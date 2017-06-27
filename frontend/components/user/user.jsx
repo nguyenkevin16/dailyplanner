@@ -16,6 +16,8 @@ class User extends React.Component {
   render() {
     return (
       <section className='user flex-grid'>
+        <section className='navbar-dummy'/>
+
         <section className='calendar-tasks'>
           <section className='calendar'>
             testing
