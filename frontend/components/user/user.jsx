@@ -5,6 +5,14 @@ class User extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    $('.navbar').removeClass('no-background').addClass('nav-background box-shadow');
+  }
+
+  componentWillUnmount() {
+    $('.navbar').removeClass('nav-background box-shadow').addClass('no-background');
+  }
+
   render() {
     return (
       <section className='user flex-grid'>
