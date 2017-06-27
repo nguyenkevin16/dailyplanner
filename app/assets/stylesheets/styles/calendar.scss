@@ -1,0 +1,26 @@
+.cal-row {
+  width: 100%;
+}
+
+.cal-title {
+  flex-grow: 5;
+}
+
+.cal-cell {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.cal-header {
+  flex-grow: 1;
+}
+
+.cal-weekdays {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.cal-dates {
+  flex-grow: 6;
+  flex-basis: 0;
+}

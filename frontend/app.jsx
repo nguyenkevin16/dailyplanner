@@ -2,13 +2,12 @@
 
 import React from 'react';
 
-import Welcome from './components/welcome/welcome';
 import NavbarContainer from './components/navbar/navbar_container';
 
-const App = () => (
-  <section id='#app'>
+const App = (props) => (
+  <section id='app'>
     <NavbarContainer/>
-    <Welcome/>
+    { props.children }
   </section>
 );
 
