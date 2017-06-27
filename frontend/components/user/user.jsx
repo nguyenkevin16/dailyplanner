@@ -1,4 +1,5 @@
 import React from 'react';
+import Calendar from './calendar';
 
 class User extends React.Component {
   constructor(props) {
@@ -19,9 +20,7 @@ class User extends React.Component {
         <section className='navbar-dummy'/>
 
         <section className='calendar-tasks x-1-3 y-1'>
-          <section className='calendar x-1 y-1-3'>
-            testing
-          </section>
+          <Calendar/>
           
           <section className='tasks x-1 y-2-3'>
             testing
