@@ -1,5 +1,5 @@
 import React from 'react';
-import Calendar from './calendar';
+import Calendar from './cal/calendar';
 
 class User extends React.Component {
   constructor(props) {

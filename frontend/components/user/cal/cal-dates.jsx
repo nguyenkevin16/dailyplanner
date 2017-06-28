@@ -38,7 +38,7 @@ class CalDates extends React.Component {
     splicedDates.push(dates);
 
     return splicedDates.map((dates, idx) => (
-      <div className='cal-row flex-grid' key={ 'row-' + idx }> { dates } </div> 
+      <div className='flex-grid x-1' key={ 'row-' + idx }> { dates } </div> 
     ));
   }
 
