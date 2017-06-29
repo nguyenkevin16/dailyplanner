@@ -1,6 +1,5 @@
 import React from 'react';
 import CalHeader from './cal-header';
-import CalWeekdays from './cal-weekdays';
 import CalDates from './cal-dates';
 
 class Calendar extends React.Component {
@@ -41,8 +40,7 @@ class Calendar extends React.Component {
           month={this.state.month} 
           year={this.state.year} 
           onPrev={this.getPrev} 
-          onNext={this.getNext}/>
-        <CalWeekdays 
+          onNext={this.getNext}
           dayNames={this.state.dayNames}/>
         <CalDates
           startDay={this.state.startDay} 

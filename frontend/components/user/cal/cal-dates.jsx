@@ -13,7 +13,7 @@ class CalDates extends React.Component {
 
     for (let i = 0; i < startDay; i++) {
       dates.push(
-        <div className='cal-cell cal-date flex-grid' key={ 'blank-' + i }></div>
+        <div className='cal-cell flex-grid' key={ 'blank-' + i }></div>
       );
     }
 
@@ -31,20 +31,20 @@ class CalDates extends React.Component {
 
     for (let k = dates.length; k < 7; k++) {
       dates.push(
-        <div className='cal-cell cal-date flex-grid' key={ 'blank-' + k }></div>
+        <div className='cal-cell flex-grid' key={ 'blank-' + k }></div>
       )
     }
 
     splicedDates.push(dates);
 
     return splicedDates.map((dates, idx) => (
-      <div className='cal-row flex-grid' key={ 'row-' + idx }> { dates } </div> 
+      <div className='flex-grid x-1' key={ 'row-' + idx }> { dates } </div> 
     ));
   }
 
   render() {
     return(
-      <section className='cal-dates flex-grid'>       
+      <section className='cal-dates flex-grid x-1 y-3-4'>       
         {
           this.createDates(this.props.startDay, this.props.daysInMonth)
         }
