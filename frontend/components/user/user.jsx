@@ -1,6 +1,6 @@
 import React from 'react';
 import Calendar from './cal/calendar';
-import Tasklist from './tasks/tasklist';
+import Todolist from './todo/todolist_index';
 
 class User extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class User extends React.Component {
 
         <section className='x-1-4 y-1'>
           <Calendar/>
-          <Tasklist/>
+          <Todolist/>
         </section>
 
         <section className='journal x-3-4 y-1'>
