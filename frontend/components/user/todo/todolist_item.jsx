@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Task = ({task, remove}) => (
+const TodoItem = ({task, remove}) => (
   <li onClick={remove(task.id)}>
     {task.text}
   </li>
 )
 
-export default Task;
+export default TodoItem;
