@@ -3,6 +3,12 @@
   height: 100%;
 }
 
+.cal-date:hover,
+.cal-prev:hover,
+.cal-fwd:hover {
+  background-color: aquamarine;
+}
+
 .cal-dates > div {
   height: 20%;
 }

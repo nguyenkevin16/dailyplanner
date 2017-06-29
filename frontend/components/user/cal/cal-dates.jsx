@@ -13,7 +13,7 @@ class CalDates extends React.Component {
 
     for (let i = 0; i < startDay; i++) {
       dates.push(
-        <div className='cal-cell cal-date flex-grid' key={ 'blank-' + i }></div>
+        <div className='cal-cell flex-grid' key={ 'blank-' + i }></div>
       );
     }
 
@@ -31,7 +31,7 @@ class CalDates extends React.Component {
 
     for (let k = dates.length; k < 7; k++) {
       dates.push(
-        <div className='cal-cell cal-date flex-grid' key={ 'blank-' + k }></div>
+        <div className='cal-cell flex-grid' key={ 'blank-' + k }></div>
       )
     }
 
