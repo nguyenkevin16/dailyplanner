@@ -44,6 +44,11 @@ const Tech = () => (
         <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/c_scale,w_300/v1496902778/jQurery_bwnmte.gif' alt='jQuery' />
         <p>jQuery</p>
       </a>
+
+      <a href='https://firebase.google.com/' target="_blank">
+        <img src='https://res.cloudinary.com/nguyenkevin16/image/upload/c_scale,w_300/v1498775415/firebase_zwetgk.png' alt='Firebase' />
+        <p>Firebase</p>
+      </a>
     </div>
   </section>
 );
