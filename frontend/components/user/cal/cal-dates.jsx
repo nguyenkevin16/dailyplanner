@@ -44,7 +44,7 @@ class CalDates extends React.Component {
 
   render() {
     return(
-      <section className='cal-dates flex-grid'>       
+      <section className='cal-dates flex-grid x-1 y-3-4'>       
         {
           this.createDates(this.props.startDay, this.props.daysInMonth)
         }

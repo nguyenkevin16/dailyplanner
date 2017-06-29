@@ -1,22 +1,12 @@
-.cal-title {
-  flex-grow: 5;
-}
-
 .cal-cell {
-  flex-grow: 1;
-  flex-basis: 0;
+  width: 14.28%; 
+  height: 100%;
 }
 
-.cal-header {
-  flex-grow: 1;
+.cal-dates > div {
+  height: 20%;
 }
 
-.cal-weekdays {
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
-.cal-dates {
-  flex-grow: 6;
-  flex-basis: 0;
+.cal-nav {
+  justify-content: space-between;
 }
